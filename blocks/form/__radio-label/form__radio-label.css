@@ -3,6 +3,7 @@
     align-items: center;
     user-select: none;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .form__radio+.form__radio-label::before {
@@ -24,6 +25,6 @@
     background-color: black;
 }
 
-.form__radio:not(:disabled):not(:checked)+.form__radio-label:hover::before {
+/*.form__radio:not(:disabled):not(:checked)+.form__radio-label:hover::before {
     cursor: pointer;
-}
+}*/
