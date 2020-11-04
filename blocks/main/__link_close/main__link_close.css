@@ -1,0 +1,7 @@
+@media screen and (max-width: 425px) {
+    .main__link_close {
+        margin-left: 7px;
+        margin-right: 7px;
+        margin-top: 3px;
+    }
+}

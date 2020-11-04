@@ -1,0 +1,21 @@
+.text {
+    margin: 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 760px;
+}
+
+@media screen and (max-width: 1024px) {
+    .text {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

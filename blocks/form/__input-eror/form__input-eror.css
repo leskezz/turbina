@@ -1,0 +1,16 @@
+.form__input-eror {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: red;
+}
+
+.form__input-eror:last-of-type {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 425px) {
+    .form__input-eror {
+        font-size: 14px;
+    }
+}
