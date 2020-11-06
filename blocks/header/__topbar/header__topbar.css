@@ -1,0 +1,7 @@
+.header__topbar {
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto auto;
+}

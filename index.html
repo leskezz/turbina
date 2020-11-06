@@ -9,88 +9,67 @@
 </head>
 
 <body class="root">
-    <main class="content">
-        <section class="main">
+  <header class="header">
+    <div class="header__topbar">
+      <a href="#" class="header__logo hover-opacity"><img src="./images/Лого.svg" alt="Логотип"></a>
+      <nav>
+        <ul class="header__links">
+          <li><a href="#" class="header__link">Стриминги</a></li>
+          <li><a href="#" class="header__link">Яндекс.Музыка &#8599;</a></li>
+          <li><a href="#" class="header__link">Spotify &#8599;</a></li>
+          <li><a href="#" class="header__link">Apple Music &#8599;</a></li>
+          <li><a href="#" class="header__link">VK Music &#8599;</a></li>
+        </ul>
+      </nav>
+    </div>
+    <h1 class="header__title"><img class="header__title-img" src="./images/Турбина.svg" alt="Турбина"></h1>
+    <div class="player"></div>
+  </header>
 
-            <div class="main__header">
-                <a href="#" class="main__logo hover-opacity"><img src="./images/Лого.svg" alt="Логотип"></a>
-
-                <ul class="main__links">
-                    <li class="main__link-item">
-                        <a href="#" class="main__link main__link_close"><img src="./images/Крестик.svg" alt="Крестик"></a>
-                    </li>
-                    <li class="main__link-item "><a href="#" class="main__link hover-opacity">Стриминги</a></li>
-                    <li class="main__link-item"><a href="#" class="main__link hover-opacity">Яндекс.Музыка &#8599;</a></li>
-                    <li class="main__link-item"><a href="#" class="main__link hover-opacity">Spotify &#8599;</a></li>
-                    <li class="main__link-item"><a href="#" class="main__link hover-opacity">Apple Music &#8599;</a></li>
-                    <li class="main__link-item"><a href="#" class="main__link hover-opacity">VK Music &#8599;</a></li>
-                </ul>
-            </div>
-
-            <h1 class="main__title"><img class="main__title-img" src="./images/Турбина.svg" alt="Турбина"></h1>
-
-            <div class="player"></div>
-        </section>
-
-        <div class="remain">
-            <div class="description">
-                <h2 class="title">О проекте.</h2>
-                <p class="description__text text">Мы знаем, что наши дети постоянно существуют в режиме непрекращающегося творческого процесса. Мы видим это, когда ребёнок что-то напевает, когда он бесконечно рисует, когда придумывает истории, когда разговаривает с едой и игрушками —
-                    дети постоянно включены и что-то изобретают. Родители часто недооценивают это спонтанное творчество ребёнка. Это не плохо, просто мы привыкаем к этому. Давайте попробуем внимательнее присмотреться к нашим детям.</p>
-                <p class="description__text text">Мы запускаем проект «ТУРБИНА», который открывает работу настоящего музыкального лейбла на базе «Маршака». В рамках «ТУРБИНЫ» лучшие современные инди-музыканты пишут свои песни на стихи, написанные детьми. Здесь важно&nbsp;— мы не&nbsp;заставляем
-                    наших детей садиться и писать поэзию, мы говорим о том, что родителям стоит быть более внимательными и чуткими к своим детям. Именно так мы сможем получить тексты, которые перестанут быть детскими, не будут осмыслены как взрослые&nbsp;—
-                    поэзия, которая сокращает дистанцию между взрослостью и детством, где спонтанное детское творчество и&nbsp;бессознательное, замеченное родителем, становится общественным культурным достоянием.</p>
-
-                <h2 class="title">Как это работает?</h2>
-                <p class="description__text text">Вы можете прислать нам тексты, родившиеся у ваших детей, которые вы записали и считаете, что это сильное высказывание. Мы собираем пул таких текстов и передаём их музыкантам. Артисты создают музыку на эти стихи. Мы продюсируем выпуск трека,
-                    возможно съёмки клипа и так далее. Мы всегда указываем автора стихотворений внутри релиза: Хадн&nbsp;Дадн feat. Варя&nbsp;Карпова и Федя&nbsp;Быстров&nbsp;— Контур.</p>
-
-                <h2 class="title">Тезисы.</h2>
-                <ul class="description__theses">
-                    <li class="description__thesis text">Дети никогда не&nbsp;прекращают творить и круто стараться быть на них похожими в этом</li>
-                    <li class="description__thesis text">Детское бессознательное помогает родителям понять, что происходит внутри семьи</li>
-                    <li class="description__thesis text">Не существует детской и взрослой поэзии. Существует мысль и чувство, зафиксированное в ней</li>
-                    <li class="description__thesis text">Дети получают невероятное удовольствие и мотивацию от того, что их творчество востребовано сверстниками и взрослыми</li>
-                </ul>
-
-                <div class="form">
-                    <h2 class="title">Форма.</h2>
-                    <p class="text form__subtitle">Заполняя эту форму, вы становитесь частью проекта.</p>
-
-                    <fieldset class="form__fieldset">
-                        <input class="form__input" type="text" placeholder="Имя и фамилия автора">
-                        <span class="form__input-eror">Сообщение об ошибке</span>
-                        <input class="form__input" type="tel" placeholder="Телефон">
-                        <span class="form__input-eror">Сообщение об ошибке</span>
-                        <input class="form__input" type="email" placeholder="Почта">
-                        <span class="form__input-eror">Сообщение об ошибке</span>
-                        <textarea class="form__input form__input_textarea" placeholder="Стихи"></textarea>
-                        <span class="form__input-eror">Сообщение об ошибке</span>
-
-                        <div class="form__radio-container">
-                            <input class="form__radio" type="radio" id="radio">
-                            <label class="form__radio-label hover-opacity" for="radio"></label>
-                            <p class="text">Согласен с <a href="./vendor/file.pdf" class="form__link-offer hover-opacity" target="_blank">офертой</a></p>
-
-                        </div>
-
-
-                        <span class="form__input-eror">Сообщение об ошибке</span>
-                        <button class="form__submit hover-opacity" type="submit">Отправить форму</button>
-                    </fieldset>
-                </div>
-
-            </div>
-
-
-
-            <footer class="footer">
-                <p class="footer__copyright">&copy; Маршак, 2020.</p>
-                <address class="footer__copyright">Сделано студентами <a href="https://praktikum.yandex.ru/" class="footer__link hover-opacity" target="_blank">Яндекс.Практикум</a></address>
-            </footer>
-
+  <main class="content">
+    <h2 class="title">О проекте.</h2>
+    <p class="description__text text">Мы знаем, что наши дети постоянно существуют в режиме непрекращающегося творческого процесса. Мы видим это, когда ребёнок что-то напевает, когда он бесконечно рисует, когда придумывает истории, когда разговаривает с едой и игрушками —
+      дети постоянно включены и что-то изобретают. Родители часто недооценивают это спонтанное творчество ребёнка. Это не плохо, просто мы привыкаем к этому. Давайте попробуем внимательнее присмотреться к нашим детям.</p>
+    <p class="description__text text">Мы запускаем проект «ТУРБИНА», который открывает работу настоящего музыкального лейбла на базе «Маршака». В рамках «ТУРБИНЫ» лучшие современные инди-музыканты пишут свои песни на стихи, написанные детьми. Здесь важно&nbsp;— мы не&nbsp;заставляем
+      наших детей садиться и писать поэзию, мы говорим о том, что родителям стоит быть более внимательными и чуткими к своим детям. Именно так мы сможем получить тексты, которые перестанут быть детскими, не будут осмыслены как взрослые&nbsp;—
+      поэзия, которая сокращает дистанцию между взрослостью и детством, где спонтанное детское творчество и&nbsp;бессознательное, замеченное родителем, становится общественным культурным достоянием.</p>
+    <h2 class="title">Как это работает?</h2>
+    <p class="description__text text">Вы можете прислать нам тексты, родившиеся у ваших детей, которые вы записали и считаете, что это сильное высказывание. Мы собираем пул таких текстов и передаём их музыкантам. Артисты создают музыку на эти стихи. Мы продюсируем выпуск трека,
+      возможно съёмки клипа и так далее. Мы всегда указываем автора стихотворений внутри релиза: Хадн&nbsp;Дадн feat. Варя&nbsp;Карпова и Федя&nbsp;Быстров&nbsp;— Контур.</p>
+    <h2 class="title">Тезисы.</h2>
+    <ul class="description__theses">
+      <li class="description__thesis text">Дети никогда не&nbsp;прекращают творить и круто стараться быть на них похожими в этом</li>
+      <li class="description__thesis text">Детское бессознательное помогает родителям понять, что происходит внутри семьи</li>
+      <li class="description__thesis text">Не существует детской и взрослой поэзии. Существует мысль и чувство, зафиксированное в ней</li>
+      <li class="description__thesis text">Дети получают невероятное удовольствие и мотивацию от того, что их творчество востребовано сверстниками и взрослыми</li>
+    </ul>
+    <form class="form">
+      <h2 class="title">Форма.</h2>
+      <p class="text form__subtitle">Заполняя эту форму, вы становитесь частью проекта.</p>
+      <fieldset class="form__fieldset">
+        <input class="form__input" type="text" placeholder="Имя и фамилия автора">
+        <span class="form__input-eror">Сообщение об ошибке</span>
+        <input class="form__input" type="tel" placeholder="Телефон">
+        <span class="form__input-eror">Сообщение об ошибке</span>
+        <input class="form__input" type="email" placeholder="Почта">
+        <span class="form__input-eror">Сообщение об ошибке</span>
+        <textarea class="form__input form__input_textarea" placeholder="Стихи"></textarea>
+        <span class="form__input-eror">Сообщение об ошибке</span>
+        <div class="form__radio-container">
+          <input class="form__radio" type="checkbox" id="checkbox">
+          <label class="form__radio-label hover-opacity" for="checkbox"></label>
+          <p class="text">Согласен с <a href="./vendor/file.pdf" class="form__link-offer hover-opacity" target="_blank">офертой</a></p>
         </div>
-    </main>
+        <span class="form__input-eror">Сообщение об ошибке</span>
+        <button class="form__submit hover-opacity" type="submit">Отправить форму</button>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__copyright">&copy; Маршак, 2020.</p>
+    <address class="footer__copyright">Сделано студентами <a href="https://praktikum.yandex.ru/" class="footer__link hover-opacity" target="_blank">Яндекс.Практикум</a></address>
+  </footer>
 </body>
 
 </html>

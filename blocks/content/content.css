@@ -1,0 +1,14 @@
+.content {
+  background-color: white;
+  padding: 64px 58px 86px;
+  border-radius: 8px;
+  margin: 0 10px;
+  position: relative;
+  top: -10px;
+}
+
+@media screen and (max-width: 425px) {
+  .content {
+      padding: 36px 16px 41px;
+  }
+}

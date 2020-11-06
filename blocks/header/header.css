@@ -1,0 +1,17 @@
+@import url(./__topbar/header__topbar.css);
+@import url(./__logo/header__logo.css);
+@import url(./__links/header__links.css);
+@import url(./__link/header__link.css);
+@import url(./__title/header__title.css);
+@import url(./__title-img/header__title-img.css);
+
+.header {
+  position: relative;
+  background: url(../../images/background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
