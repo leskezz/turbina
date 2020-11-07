@@ -6,6 +6,7 @@ import Footer from './Footer';
 import logoMarshak from '../images/logo-marshak.svg';
 import imageTitle from '../images/logo-turbina.svg';
 
+
 function App() {
   return (
     <div className="page">

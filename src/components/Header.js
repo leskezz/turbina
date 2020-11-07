@@ -1,4 +1,5 @@
 import React from 'react';
+import Audioplayer from './Audioplayer/Audioplayer';
 
 function Header(props) {
 
@@ -15,7 +16,7 @@ function Header(props) {
                 </ul>
             </div>
             <h1 className="header__title"><img className="header__title-img" src={props.imageTitle} alt="Турбина" /></h1>
-            <div className="audioplayer"></div>
+            <Audioplayer />
         </header>
     )
 }
