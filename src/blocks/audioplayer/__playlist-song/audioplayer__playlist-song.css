@@ -1,0 +1,14 @@
+.audioplayer__playlist-song {
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.audioplayer__playlist-song:last-of-type {
+    margin-bottom: 0;
+}
+
+.audioplayer__playlist-song:hover {
+    font-style: italic;
+    cursor: pointer;
+}
