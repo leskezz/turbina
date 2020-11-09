@@ -1,4 +1,6 @@
 .form__input_textarea {
-    padding-top: 20px;
-    height: 38px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 38px;
+    resize: vertical;
 }
