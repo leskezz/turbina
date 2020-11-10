@@ -1,0 +1,9 @@
+.audioplayer__track-title {
+    margin: 0;
+    padding-right: 5px;
+    font-style: normal;
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,15 @@
+.audioplayer__button-display-options {
+    margin-top: 7px;
+    appearance: none;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    .audioplayer__button-display-options {
+        grid-row: 1/2;
+        grid-column: 3/4;
+    }
+}

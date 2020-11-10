@@ -1,0 +1,14 @@
+.audioplayer__button-playpause {
+    margin: 9px 20px 0 0;
+    appearance: none;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .audioplayer__button-playpause {
+        margin-right: 10px;
+    }
+}

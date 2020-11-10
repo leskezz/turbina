@@ -1,0 +1,39 @@
+.audioplayer__options {
+    color: white;
+    appearance: none;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 30px;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+@media screen and (max-width: 1024px) {
+    .audioplayer__options {
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .audioplayer__options {
+        width: 66%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .audioplayer__options {
+        font-size: 12px;
+        line-height: 15px;
+        height: 36px;
+    }
+}

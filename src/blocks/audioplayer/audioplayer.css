@@ -1,5 +1,6 @@
 .audioplayer {
-    width: 95%;
-    border: 2px solid white;
-    margin: 0 auto 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Inter', Arial, sans-serif;
 }
