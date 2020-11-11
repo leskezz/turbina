@@ -1,5 +1,5 @@
 .audioplayer__options {
-    color: white;
+    color: #FFFFFF;
     appearance: none;
     border: 0;
     border-radius: 0;
@@ -7,26 +7,30 @@
     cursor: pointer;
     border: 2px solid white;
     border-radius: 30px;
-    width: 150px;
-    height: 40px;
+    width: 66%;
+    height: 35px;
     align-items: center;
     box-sizing: border-box;
+    font-family: 'Inter', Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
+    min-width: 135px;
 }
 
 @media screen and (max-width: 1024px) {
     .audioplayer__options {
         font-size: 15px;
         line-height: 18px;
+        min-width: 125px;
     }
 }
 
 @media screen and (max-width: 767px) {
     .audioplayer__options {
-        width: 66%;
+        min-width: 161px;
+        width: 100%;
     }
 }
 
@@ -34,6 +38,6 @@
     .audioplayer__options {
         font-size: 12px;
         line-height: 15px;
-        height: 36px;
+        height: 30px;
     }
 }
