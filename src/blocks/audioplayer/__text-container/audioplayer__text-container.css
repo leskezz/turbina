@@ -1,8 +1,9 @@
 .audioplayer__text-container {
-    overflow: scroll;
+    width: 100%;
+    overflow-y: scroll;
     overflow-x: hidden;
     max-height: 110px;
-    margin: 0 60px 30px;
+    grid-area: text-container;
 }
 
 .audioplayer__text-container::-webkit-scrollbar {
@@ -15,4 +16,21 @@
 
 .audioplayer__text-container::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.3);
+}
+
+.audioplayer__text-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 1024px) {
+    .audioplayer__text-container {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .audioplayer__text-container {
+        margin: 0;
+    }
 }

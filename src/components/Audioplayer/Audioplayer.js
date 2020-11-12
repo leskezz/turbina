@@ -1,35 +1,37 @@
-import playImage from '../../images/audioplayer-play-image.svg'; import optionsImage from '../../images/audioplayer-options-image.svg'; function Audioplayer() { return (
+import playImage from '../../images/audioplayer-play-image.svg'; import optionsImage from '../../images/audioplayer-options-image.svg'; import coverImage from '../../images/cover.png'; function Audioplayer() { return (
 <div className="audioplayer">
     <audio/>
 
-    <div className="audioplayer__control">
 
-        <button type="button" className="audioplayer__button-playpause">
+
+    <img src={ coverImage } className="audioplayer__cover" alt="Обложка" />
+
+    <button type="button" className="audioplayer__button-playpause">
             <img src = { playImage } className = "audioplayer__button-playpause-image" alt = "Плэй"/>
         </button>
 
-        <div className="audioplayer__track-params">
-            <p className="audioplayer__track-title"> Контур— Хадн Дадн feat.Варя Карпова и Федя Быстров </p>
-            <p className="audioplayer__track-length">2:24</p>
+    <div className="audioplayer__track-params">
+        <p className="audioplayer__track-title"> Контур— Хадн Дадн feat.Варя Карпова и Федя Быстров </p>
+        <p className="audioplayer__track-length">2:24</p>
 
-            <div className="audioplayer__progressbar">
-                <div className="audioplayer__progressbar-value"></div>
-            </div>
+        <div className="audioplayer__progressbar">
+            <div className="audioplayer__progressbar-value"></div>
         </div>
+    </div>
 
-        <div className="audioplayer__disappearing-buttons">
-            <a className="audioplayer__clip" href="#">
-                <img src={ playImage } className="audioplayer__clip-image" alt="Клип" />Клип
-            </a>
+    <div className="audioplayer__disappearing-buttons">
+        <a className="audioplayer__clip" href="#">
+            <img src={ playImage } className="audioplayer__clip-image" alt="Клип" />Клип
+        </a>
 
-            <button type="button" className="audioplayer__options">Текст песни</button>
-        </div>
+        <button type="button" className="audioplayer__options">Текст песни</button>
+    </div>
 
-        <button type="button" className="audioplayer__button-display-options">
+    <button type="button" className="audioplayer__button-display-options">
             <img src={ optionsImage } className="audioplayer__button-display-options-image" alt="Опции"/>
         </button>
 
-    </div>
+
 
     <div className="audioplayer__text-container">
 
