@@ -1,0 +1,9 @@
+.header__streaming-button {
+    display: none;
+}
+
+@media screen and (max-width: 425px) {
+    .header__streaming-button {
+        display: block;
+    }
+}

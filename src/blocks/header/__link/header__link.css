@@ -15,6 +15,7 @@
   align-items: center;
   box-sizing: border-box;
   transition: .2s;
+  background: none;
 }
 
 .header__link:hover{

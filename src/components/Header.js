@@ -8,9 +8,8 @@ function Header(props) {
             <div className="header__topbar">
                 <a href="#" className="header__logo hover-opacity"><img src={props.logo} alt="Логотип" /></a>
                 <div className="header__streaming">
-                    <button type="button"></button>
+                    <button type="button" className="header__link header__streaming-button">Стриминги</button>
                 <ul className="header__links">
-                    <li><a href="#" className="header__link">Стриминги</a></li>
                     <li><a href="#" className="header__link">Яндекс.Музыка &#8599;</a></li>
                     <li><a href="#" className="header__link">Spotify &#8599;</a></li>
                     <li><a href="#" className="header__link">Apple Music &#8599;</a></li>
