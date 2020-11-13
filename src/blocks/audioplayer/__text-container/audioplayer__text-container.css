@@ -1,0 +1,18 @@
+.audioplayer__text-container {
+    overflow: scroll;
+    overflow-x: hidden;
+    max-height: 110px;
+    margin: 0 60px 30px;
+}
+
+.audioplayer__text-container::-webkit-scrollbar {
+    width: 3px;
+}
+
+.audioplayer__text-container::-webkit-scrollbar-track {
+    background: rgba(243, 243, 243, 0.1);
+}
+
+.audioplayer__text-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+}

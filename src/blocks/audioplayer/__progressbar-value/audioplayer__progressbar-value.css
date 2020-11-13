@@ -1,0 +1,5 @@
+.audioplayer__progressbar-value {
+    width: 33%;
+    height: 2px;
+    background-color: white;
+}
