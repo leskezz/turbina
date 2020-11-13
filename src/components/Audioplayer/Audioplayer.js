@@ -1,70 +1,106 @@
+import React from 'react';
 import playImage from '../../images/audioplayer-play-image.svg';
+import playClipImage from '../../images/audioplayer-play-clip-image.svg';
+import pauseImage from '../../images/audioplayer-pause-image.svg'
 import optionsImage from '../../images/audioplayer-options-image.svg';
+import closeOptionsImage from '../../images/audioplayer-close-options-image.svg';
+import playlist from './Playlist';
+import throttling from '../../utils/throttling';
+import Timeline from './Timeline';
+import Releases from './Releases/Releases';
+import Lyrics from './Lyrics';
+import secToMinConverter from '../../utils/convert-second-to-minutes';
 
 function Audioplayer() { 
     
+    const [ currentTrack, setCurrentTrack ] = React.useState(playlist[0]);
+    const [ currentTime, setCurrentTime ] = React.useState(0);
+    const [ duration, setDuration ] = React.useState(0);
+    const [ isPlaying, setIsPlaying ] = React.useState(false);
+    const [ isOpenedOptions, setIsOpenedOptions ] = React.useState(false);
+    const [ isOpenedLyrics, setIsOpenedLyrics ] = React.useState(false);
+
+    const myPlayer = React.useRef(null);
+
+    const onTimeUpdate = throttling(e => {
+        setCurrentTime(e.target.currentTime);
+    }, 1000);
+
+    const onPlay = e => {
+        setDuration(e.target.duration);
+        console.log(duration);
+    };
+
+    const playHandler = () => {
+        if (isPlaying) {
+            myPlayer.current.pause();
+            setIsPlaying(false);
+        } else {
+            myPlayer.current.play();
+            setIsPlaying(true);
+        }
+    };
+
+    const openOptionsHandler = () => {
+        setIsOpenedOptions(!isOpenedOptions);
+    };
+
+    const clickReleaseHandler = (item) => {
+        setCurrentTrack(item);
+        setIsPlaying(false)
+    }
+
     return (
         <div className="audioplayer">
-            <audio/>
 
             <div className="audioplayer__control">
 
-                <button type="button" className="audioplayer__button-playpause">
-                    <img src = { playImage } className = "audioplayer__button-playpause-image" alt = "Плэй"/>
+                <button type="button" className="audioplayer__button-playpause" onClick={playHandler}>
+                    <img src ={ isPlaying ? pauseImage : playImage } className = "audioplayer__button-playpause-image" alt = "Плэй"/>
                 </button>
 
                 <div className="audioplayer__track-params">
-                    <p className="audioplayer__track-title"> Контур— Хадн Дадн feat.Варя Карпова и Федя Быстров </p>
-                    <p className="audioplayer__track-length">2:24</p>
+                    <audio
+                        src={currentTrack.audioFile}
+                        className="audioplayer__audio"
+                        ref={myPlayer}
+                        onPlay={onPlay}
+                        onPause={_ => console.log('pause')}
+                        onTimeUpdate={onTimeUpdate}
+                        onLoadedData={_ => setDuration(myPlayer.current.duration)}
+                    >
+                        Your browser does not support audio
+                    </audio>
+                    <p className="audioplayer__track-title"> {currentTrack.title} — {currentTrack.author} </p>
+                    <p className="audioplayer__track-length">{secToMinConverter(duration - currentTime)}</p>
 
-                    <div className="audioplayer__progressbar">
-                        <div className="audioplayer__progressbar-value"></div>
-                    </div>
+                    <Timeline
+                        currentTime={currentTime}
+                        duration={duration}
+                        onClick={time => myPlayer.current.currentTime = time}
+                    />
+
                 </div>
-
+                { isOpenedOptions &&
                 <div className="audioplayer__disappearing-buttons">
                     <a className="audioplayer__clip" href="#">
-                        <img src={ playImage } className="audioplayer__clip-image" alt="Клип" />Клип
+                        <img src={ playClipImage } className="audioplayer__clip-image" alt="Клип" />Клип
                     </a>
+                    <button type="button" className="audioplayer__options" onClick={_ => setIsOpenedLyrics(!isOpenedLyrics)}> {isOpenedLyrics ? 'Релизы' : 'Текст песни'}</button>
+                </div>}
 
-                    <button type="button" className="audioplayer__options">Текст песни</button>
-                </div>
-
-                <button type="button" className="audioplayer__button-display-options">
-                    <img src={ optionsImage } className="audioplayer__button-display-options-image" alt="Опции"/>
+                <button type="button" className="audioplayer__button-display-options" onClick={openOptionsHandler}>
+                    <img src={ isOpenedOptions ? closeOptionsImage : optionsImage } className="audioplayer__button-display-options-image" alt="Опции"/>
                 </button>
 
             </div>
 
-            <div className="audioplayer__text-container">
+            { isOpenedOptions && <div className="audioplayer__text-container">
+                { !isOpenedLyrics  ? <Releases onClick={clickReleaseHandler} playlist={playlist} /> : <Lyrics currentTrack={currentTrack} /> }
+            </div>}
 
-                <div className="audioplayer__playlist">
-                    <p className="audioplayer__playlist-title"> Релизы:
-                    </p>
-                    <ul className="audioplayer__playlist-list">
-                        <li className="audioplayer__playlist-song"> Поезия— Мукулатура feat.Саша Петров
-                        </li>
-                        <li className="audioplayer__playlist-song"> Лодка— СБПЧ feat.Маруся Романова
-                        </li>
-                        <li className="audioplayer__playlist-song"> Кирпичи— Инди группа feat.Пётр Сковородников
-                        </li>
-                    </ul>
-                </div>
+    </div>
+    ) 
+};
 
-                <div className="audioplayer__lyrics">
-                    <p className="audioplayer__lyrics-title"> Текст песни:
-                    </p>
-                    <p className="audioplayer__lyrics-text">Мой&nbsp;милый&nbsp;милый&nbsp;мальчик, Моя&nbsp;милая&nbsp;милая&nbsp;девочка. Никогда&nbsp;не&nbsp;знаешь&nbsp;что&nbsp;будет&nbsp;дальше, В&nbsp;этой&nbsp;гадкой&nbsp;зиме
-                    </p>
-                </div>
-
-                <p className="audioplayer__empty">Пока что у нас только 1 релиз.</p>
-
-        </div>
-
-
-
-
-
-</div>
-) }; export default Audioplayer;
+export default Audioplayer;

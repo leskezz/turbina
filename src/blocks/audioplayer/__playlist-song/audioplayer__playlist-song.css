@@ -2,6 +2,10 @@
     font-style: normal;
     font-weight: 500;
     margin-bottom: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
 }
 
 .audioplayer__playlist-song:last-of-type {

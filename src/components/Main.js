@@ -34,7 +34,7 @@ function Main() {
                     <span className="form__input-eror">Сообщение об ошибке</span>
                     <div className="form__radio-container">
                         <input className="form__radio" type="checkbox" id="checkbox" />
-                        <label className="form__radio-label hover-opacity" for="checkbox"></label>
+                        <label className="form__radio-label hover-opacity" htmlFor="checkbox"></label>
                         <p className="text">Согласен с <a href="./vendor/file.pdf" className="form__link-offer hover-opacity" target="_blank">офертой</a></p>
                     </div>
                     <span className="form__input-eror">Сообщение об ошибке</span>
