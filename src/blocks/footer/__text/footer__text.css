@@ -1,4 +1,4 @@
-.footer__copyright {
+.footer__text {
     color: #FFFFFF;
     font-style: normal;
     font-weight: normal;
@@ -8,7 +8,7 @@
 }
 
 @media screen and (max-width: 425px) {
-    .footer__copyright {
+    .footer__text {
         font-size: 12px;
         line-height: 22px;
     }

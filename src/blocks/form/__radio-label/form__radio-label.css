@@ -13,7 +13,7 @@
     height: 28px;
     flex-shrink: 0;
     flex-grow: 0;
-    border: 2px solid black;
+    border: 2px solid #000000;
     box-sizing: border-box;
     border-radius: 50%;
     background-repeat: no-repeat;
@@ -22,8 +22,9 @@
 }
 
 .form__radio:checked+.form__radio-label::before {
-    background-color: black;
+    background-color: #000000;
 }
+
 
 /*.form__radio:not(:disabled):not(:checked)+.form__radio-label:hover::before {
     cursor: pointer;

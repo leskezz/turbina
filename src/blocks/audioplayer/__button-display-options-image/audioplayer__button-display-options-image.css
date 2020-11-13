@@ -1,0 +1,11 @@
+.audioplayer__button-display-options-image {
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (max-width: 425px) {
+    .audioplayer__button-display-options-image {
+        width: 16px;
+        height: 16px;
+    }
+}
