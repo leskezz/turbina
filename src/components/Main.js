@@ -1,6 +1,7 @@
 import React from "react";
 
-function Main() {
+function Main(props) {
+  
   return (
   <main className="content">
       <h2 className="title">О проекте.</h2>
@@ -53,7 +54,7 @@ function Main() {
           творчество востребовано сверстниками и взрослыми
         </li>
       </ul>
-      <form className="form">
+      <form className="form" name="form">
         <h2 className="title">Форма.</h2>
         <p className="text form__subtitle">
           Заполняя эту форму, вы становитесь частью проекта.
@@ -65,7 +66,7 @@ function Main() {
             id="form__author"
             name="author-name"
             placeholder="Имя и фамилия автора"
-            minlength="2"
+            minLength="2"
             maxLength="100"
             required
           />
@@ -76,6 +77,7 @@ function Main() {
             id="form__phone"
             name="phone"
             placeholder="Телефон"
+            pattern="^[+ 0-9]+$"
             required
           />
           <span className="form__input_type_error" id="form__phone-error"></span>
@@ -97,11 +99,12 @@ function Main() {
               className="form__radio" 
               type="checkbox" 
               id="checkbox"
+              onClick={props.onClickCheckBox}
               required
             />
             <label
               className="form__radio-label hover-opacity"
-              for="checkbox"
+              htmlFor="checkbox"
             ></label>
             <p className="text">
               Согласен с{" "}
@@ -114,8 +117,8 @@ function Main() {
               </a>
             </p>
           </div>
-          <span className="form__input_type_error" id="checkbox-error">Сообщение об ошибке</span>
-          <button className="form__submit hover-opacity" type="submit">
+          <span className="form__input_type_error" id="checkbox-error"></span>
+          <button className="form__submit hover-opacity" type="submit" onClick={props.onClickSubmit}>
             Отправить форму
           </button>
         </fieldset>
