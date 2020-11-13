@@ -10,6 +10,7 @@ import Timeline from './Timeline';
 import Releases from './Releases/Releases';
 import Lyrics from './Lyrics';
 import secToMinConverter from '../../utils/convert-second-to-minutes';
+import coverImage from '../../images/cover.png';
 
 function Audioplayer() { 
     
@@ -53,7 +54,7 @@ function Audioplayer() {
     return (
         <div className="audioplayer">
 
-            <div className="audioplayer__control">
+            { isOpenedOptions && <img src={ coverImage } className="audioplayer__cover" alt="Обложка" /> }
 
                 <button type="button" className="audioplayer__button-playpause" onClick={playHandler}>
                     <img src ={ isPlaying ? pauseImage : playImage } className = "audioplayer__button-playpause-image" alt = "Плэй"/>
@@ -93,13 +94,11 @@ function Audioplayer() {
                     <img src={ isOpenedOptions ? closeOptionsImage : optionsImage } className="audioplayer__button-display-options-image" alt="Опции"/>
                 </button>
 
-            </div>
 
             { isOpenedOptions && <div className="audioplayer__text-container">
                 { !isOpenedLyrics  ? <Releases onClick={clickReleaseHandler} playlist={playlist} /> : <Lyrics currentTrack={currentTrack} /> }
             </div>}
-
-    </div>
+        </div>
     ) 
 };
 

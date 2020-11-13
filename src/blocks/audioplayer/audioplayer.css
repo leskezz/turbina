@@ -2,8 +2,32 @@
 @import url('./__clip-image/audioplayer__clip-image.css');
 
 .audioplayer {
-    display: flex;
-    flex-direction: column;
-    color: white;
+    position: relative;
+    display: grid;
+    padding: 0 25px 30px;
+    gap: 30px 20px;
+    color: #FFFFFF;
     font-family: 'Inter', Arial, sans-serif;
+    grid-template-areas: "cover play track disappearing-buttons display-options" "cover . text-container text-container .";
+    grid-template-columns: auto auto 1fr auto auto;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+    .audioplayer {
+        max-height: 165px;
+        grid-template-areas: "play track track disappearing-buttons display-options" ". cover  text-container text-container .";
+        grid-template-columns: auto auto 1fr auto auto;
+        gap: 20px 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .audioplayer {
+        padding: 0 15px 30px;
+        max-height: 480px;
+        grid-template-areas: "play track  display-options" ". cover ." ". disappearing-buttons ." ". text-container .";
+        grid-template-columns: auto 1fr auto;
+        gap: 20px 9px;
+    }
 }

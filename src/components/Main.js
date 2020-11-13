@@ -4,7 +4,7 @@ function Main() {
   return (
   <main className="content">
       <h2 className="title">О проекте.</h2>
-      <p className="description__text text">
+      <p className="content__text text">
         Мы знаем, что наши дети постоянно существуют в режиме непрекращающегося
         творческого процесса. Мы видим это, когда ребёнок что-то напевает, когда
         он бесконечно рисует, когда придумывает истории, когда разговаривает с
@@ -13,7 +13,7 @@ function Main() {
         просто мы привыкаем к этому. Давайте попробуем внимательнее
         присмотреться к нашим детям.
       </p>
-      <p className="description__text text">
+      <p className="content__text text">
         Мы запускаем проект «ТУРБИНА», который открывает работу настоящего
         музыкального лейбла на базе «Маршака». В рамках «ТУРБИНЫ» лучшие
         современные инди-музыканты пишут свои песни на стихи, написанные детьми.
@@ -26,7 +26,7 @@ function Main() {
         становится общественным культурным достоянием.
       </p>
       <h2 className="title">Как это работает?</h2>
-      <p className="description__text text">
+      <p className="content__text text">
         Вы можете прислать нам тексты, родившиеся у ваших детей, которые вы
         записали и считаете, что это сильное высказывание. Мы собираем пул таких
         текстов и передаём их музыкантам. Артисты создают музыку на эти стихи.
@@ -35,20 +35,20 @@ function Main() {
         feat. Варя&nbsp;Карпова и Федя&nbsp;Быстров&nbsp;— Контур.
       </p>
       <h2 className="title">Тезисы.</h2>
-      <ul className="description__theses">
-        <li className="description__thesis text">
+      <ul className="content__theses">
+        <li className="content__thesis text">
           Дети никогда не&nbsp;прекращают творить и круто стараться быть на них
-          похожими в этом
+          похожими в этом 
         </li>
-        <li className="description__thesis text">
+        <li className="content__thesis text">
           Детское бессознательное помогает родителям понять, что происходит
           внутри семьи
         </li>
-        <li className="description__thesis text">
+        <li className="content__thesis text">
           Не существует детской и взрослой поэзии. Существует мысль и чувство,
           зафиксированное в ней
         </li>
-        <li className="description__thesis text">
+        <li className="content__thesis text">
           Дети получают невероятное удовольствие и мотивацию от того, что их
           творчество востребовано сверстниками и взрослыми
         </li>
