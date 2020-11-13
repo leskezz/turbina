@@ -1,5 +1,5 @@
 .form__input {
-    height: 58px;
+    min-height: 58px;
     margin: 0;
     padding: 0;
     border: none;

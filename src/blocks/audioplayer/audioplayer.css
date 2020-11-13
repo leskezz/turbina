@@ -1,3 +1,6 @@
+@import url('./__audio/audioplayer__audio.css');
+@import url('./__clip-image/audioplayer__clip-image.css');
+
 .audioplayer {
     position: relative;
     display: grid;

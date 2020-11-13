@@ -1,0 +1,32 @@
+.header__streaming-button {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    font-weight: normal;
+    border: 2px solid white;
+    border-radius: 30px;
+    height: 31px;
+    margin-bottom: 9px;
+    float: right;
+    clear: right;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    transition: .2s;
+    background: none;
+    display: none;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.header__streaming-button:hover{
+    border: 2px solid black;
+    background-color: black;
+    transition: .3s;
+}
+
+@media screen and (max-width: 425px) {
+    .header__streaming-button {
+        display: block;
+    }
+}

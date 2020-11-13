@@ -1,4 +1,5 @@
 .audioplayer__button-playpause {
+    margin: 12px 20px 0 0;
     align-self: start;
     margin-top: 10px;
     padding: 0;
@@ -7,5 +8,14 @@
     border-radius: 0;
     background: none;
     cursor: pointer;
-    grid-area: play;
+    width: 16px;
+    height: 13px;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .audioplayer__button-playpause {
+        margin-right: 10px;
+        grid-area: play;
+    }
 }
