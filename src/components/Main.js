@@ -1,4 +1,5 @@
 import React from "react";
+import Form from './Form';
 
 function Main() {
   return (
@@ -53,73 +54,9 @@ function Main() {
           творчество востребовано сверстниками и взрослыми
         </li>
       </ul>
-      <form className="form">
-        <h2 className="title">Форма.</h2>
-        <p className="text form__subtitle">
-          Заполняя эту форму, вы становитесь частью проекта.
-        </p>
-        <fieldset className="form__fieldset">
-          <input
-            className="form__input"
-            type="text"
-            id="form__author"
-            name="author-name"
-            placeholder="Имя и фамилия автора"
-            minlength="2"
-            maxLength="100"
-            required
-          />
-          <span className="form__input_type_error" id="form__author-error"></span>
-          <input 
-            className="form__input"
-            type="tel"
-            id="form__phone"
-            name="phone"
-            placeholder="Телефон"
-            required
-          />
-          <span className="form__input_type_error" id="form__phone-error"></span>
-          <input 
-            className="form__input" 
-            type="email" 
-            id="form__email"
-            name="email"
-            placeholder="Почта" />
-          <span className="form__input_type_error" id="form__email-error"></span>
-          <textarea
-            className="form__input form__input_textarea"
-            id="form__textarea"
-            placeholder="Стихи"
-          ></textarea>
-          <span className="form__input_type_error" id="form__textarea-error"></span>
-          <div className="form__radio-container">
-            <input 
-              className="form__radio" 
-              type="checkbox" 
-              id="checkbox"
-              required
-            />
-            <label
-              className="form__radio-label hover-opacity"
-              for="checkbox"
-            ></label>
-            <p className="text">
-              Согласен с{" "}
-              <a
-                href="./vendor/file.pdf"
-                className="form__link-offer hover-opacity"
-                target="_blank"
-              >
-                офертой
-              </a>
-            </p>
-          </div>
-          <span className="form__input_type_error" id="checkbox-error">Сообщение об ошибке</span>
-          <button className="form__submit hover-opacity" type="submit">
-            Отправить форму
-          </button>
-        </fieldset>
-      </form>
+
+      <Form />
+
     </main>
   );
 }
