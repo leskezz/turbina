@@ -12,14 +12,14 @@ import Lyrics from './Lyrics';
 import secToMinConverter from '../../utils/convert-second-to-minutes';
 import coverImage from '../../images/cover.png';
 
-function Audioplayer() { 
-    
-    const [ currentTrack, setCurrentTrack ] = React.useState(playlist[0]);
-    const [ currentTime, setCurrentTime ] = React.useState(0);
-    const [ duration, setDuration ] = React.useState(0);
-    const [ isPlaying, setIsPlaying ] = React.useState(false);
-    const [ isOpenedOptions, setIsOpenedOptions ] = React.useState(false);
-    const [ isOpenedLyrics, setIsOpenedLyrics ] = React.useState(false);
+function Audioplayer() {
+
+    const [currentTrack, setCurrentTrack] = React.useState(playlist[0]);
+    const [currentTime, setCurrentTime] = React.useState(0);
+    const [duration, setDuration] = React.useState(0);
+    const [isPlaying, setIsPlaying] = React.useState(false);
+    const [isOpenedOptions, setIsOpenedOptions] = React.useState(false);
+    const [isOpenedLyrics, setIsOpenedLyrics] = React.useState(false);
 
     const myPlayer = React.useRef(null);
 
@@ -51,55 +51,86 @@ function Audioplayer() {
         setIsPlaying(false)
     }
 
-    return (
-        <div className="audioplayer">
+    return ( <
+        div className = "audioplayer" >
 
-            { isOpenedOptions && <img src={ coverImage } className="audioplayer__cover" alt="Обложка" /> }
+        {
+            isOpenedOptions && < img src = { coverImage }
+            className = "audioplayer__cover"
+            alt = "Обложка" / >
+        }
 
-                <button type="button" className="audioplayer__button-playpause" onClick={playHandler}>
-                    <img src ={ isPlaying ? pauseImage : playImage } className = "audioplayer__button-playpause-image" alt = "Плэй"/>
-                </button>
+        <
+        button type = "button"
+        className = "audioplayer__button-playpause"
+        onClick = { playHandler } >
+        <
+        img src = { isPlaying ? pauseImage : playImage }
+        className = "audioplayer__button-playpause-image"
+        alt = "Плэй" / >
+        <
+        /button>
 
-                <div className="audioplayer__track-params">
-                    <audio
-                        src={currentTrack.audioFile}
-                        className="audioplayer__audio"
-                        ref={myPlayer}
-                        onPlay={onPlay}
-                        onPause={_ => console.log('pause')}
-                        onTimeUpdate={onTimeUpdate}
-                        onLoadedData={_ => setDuration(myPlayer.current.duration)}
-                    >
-                        Your browser does not support audio
-                    </audio>
-                    <p className="audioplayer__track-title"> {currentTrack.title} — {currentTrack.author} </p>
-                    <p className="audioplayer__track-length">{secToMinConverter(duration - currentTime)}</p>
+        <
+        div className = "audioplayer__track-params" >
+        <
+        audio src = { currentTrack.audioFile }
+        className = "audioplayer__audio"
+        ref = { myPlayer }
+        onPlay = { onPlay }
+        onPause = { _ => console.log('pause') }
+        onTimeUpdate = { onTimeUpdate }
+        onLoadedData = { _ => setDuration(myPlayer.current.duration) } >
+        Your browser does not support audio <
+        /audio> <
+        p className = "audioplayer__track-title" > { currentTrack.title }— { currentTrack.author } < /p> <
+        p className = "audioplayer__track-length" > { secToMinConverter(duration - currentTime) } < /p>
 
-                    <Timeline
-                        currentTime={currentTime}
-                        duration={duration}
-                        onClick={time => myPlayer.current.currentTime = time}
-                    />
+        <
+        Timeline currentTime = { currentTime }
+        duration = { duration }
+        onClick = { time => myPlayer.current.currentTime = time }
+        />
 
-                </div>
-                { isOpenedOptions &&
-                <div className="audioplayer__disappearing-buttons">
-                    <a className="audioplayer__clip" href="#">
-                        <img src={ playClipImage } className="audioplayer__clip-image" alt="Клип" />Клип
-                    </a>
-                    <button type="button" className="audioplayer__options" onClick={_ => setIsOpenedLyrics(!isOpenedLyrics)}> {isOpenedLyrics ? 'Релизы' : 'Текст песни'}</button>
-                </div>}
+        <
+        /div> {
+        isOpenedOptions &&
+        <
+        div className = "audioplayer__disappearing-buttons" >
+        <
+        a className = "audioplayer__clip"
+        href = "#" >
+        <
+        img src = { playClipImage }
+        className = "audioplayer__clip-image"
+        alt = "Клип" / > Клип <
+        /a> <
+        button type = "button"
+        className = "audioplayer__options"
+        onClick = { _ => setIsOpenedLyrics(!isOpenedLyrics) } > { isOpenedLyrics ? 'Релизы' : 'Текст песни' } < /button> < /
+        div >
+    }
 
-                <button type="button" className="audioplayer__button-display-options" onClick={openOptionsHandler}>
-                    <img src={ isOpenedOptions ? closeOptionsImage : optionsImage } className="audioplayer__button-display-options-image" alt="Опции"/>
-                </button>
+    <
+    button type = "button"
+    className = "audioplayer__button-display-options"
+    onClick = { openOptionsHandler } >
+        <
+        img src = { isOpenedOptions ? closeOptionsImage : optionsImage }
+    className = "audioplayer__button-display-options-image"
+    alt = "Опции" / >
+        <
+        /button>
 
 
-            { isOpenedOptions && <div className="audioplayer__text-container">
-                { !isOpenedLyrics  ? <Releases onClick={clickReleaseHandler} playlist={playlist} /> : <Lyrics currentTrack={currentTrack} /> }
-            </div>}
-        </div>
-    ) 
+    {
+        isOpenedOptions && < div className = "audioplayer__text-container" > {!isOpenedLyrics ? < Releases onClick = { clickReleaseHandler }
+                playlist = { playlist }
+                /> : <Lyrics currentTrack={currentTrack} / >
+            } <
+            /div>} < /
+        div >
+    )
 };
 
 export default Audioplayer;

@@ -3,6 +3,7 @@
 @import url(./blocks/page/page.css);
 @import url(./blocks/header/header.css);
 @import url(./blocks/audioplayer/audioplayer.css);
+@import url(./blocks/audioplayer/_is-open/audioplayer_is-open.css);
 @import url(./blocks/audioplayer/__control/audioplayer__control.css);
 @import url(./blocks/audioplayer/__cover/audioplayer__cover.css);
 @import url(./blocks/audioplayer/__button-playpause/audioplayer__button-playpause.css);
@@ -47,3 +48,4 @@
 @import url(./blocks/footer/__text/footer__text.css);
 @import url(./blocks/footer/__link/footer__link.css);
 @import url(./blocks/hover-opacity/hover-opacity.css);
+@import url(./blocks/blur/blur.css);
