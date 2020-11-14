@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/turbina/static/css/main.1a359dd7.chunk.css",
-    "main.js": "/turbina/static/js/main.0a17f0da.chunk.js",
-    "main.js.map": "/turbina/static/js/main.0a17f0da.chunk.js.map",
-    "runtime-main.js": "/turbina/static/js/runtime-main.aced9d19.js",
-    "runtime-main.js.map": "/turbina/static/js/runtime-main.aced9d19.js.map",
-    "static/js/2.db1fd4f7.chunk.js": "/turbina/static/js/2.db1fd4f7.chunk.js",
-    "static/js/2.db1fd4f7.chunk.js.map": "/turbina/static/js/2.db1fd4f7.chunk.js.map",
-    "static/js/3.ddc0b0d6.chunk.js": "/turbina/static/js/3.ddc0b0d6.chunk.js",
-    "static/js/3.ddc0b0d6.chunk.js.map": "/turbina/static/js/3.ddc0b0d6.chunk.js.map",
+    "main.js": "/turbina/static/js/main.db70ba4b.chunk.js",
+    "main.js.map": "/turbina/static/js/main.db70ba4b.chunk.js.map",
+    "runtime-main.js": "/turbina/static/js/runtime-main.ea916f42.js",
+    "runtime-main.js.map": "/turbina/static/js/runtime-main.ea916f42.js.map",
+    "static/js/2.15528f73.chunk.js": "/turbina/static/js/2.15528f73.chunk.js",
+    "static/js/2.15528f73.chunk.js.map": "/turbina/static/js/2.15528f73.chunk.js.map",
+    "static/js/3.dd31a97b.chunk.js": "/turbina/static/js/3.dd31a97b.chunk.js",
+    "static/js/3.dd31a97b.chunk.js.map": "/turbina/static/js/3.dd31a97b.chunk.js.map",
     "index.html": "/turbina/index.html",
     "static/css/main.1a359dd7.chunk.css.map": "/turbina/static/css/main.1a359dd7.chunk.css.map",
-    "static/js/2.db1fd4f7.chunk.js.LICENSE.txt": "/turbina/static/js/2.db1fd4f7.chunk.js.LICENSE.txt",
+    "static/js/2.15528f73.chunk.js.LICENSE.txt": "/turbina/static/js/2.15528f73.chunk.js.LICENSE.txt",
     "static/media/index.css": "/turbina/static/media/header-background.8c6e38ef.jpg",
     "static/media/Queen_-_Bohemian_Rhapsody.f7b2cf94.mp3": "/turbina/static/media/Queen_-_Bohemian_Rhapsody.f7b2cf94.mp3",
     "static/media/audioplayer-close-options-image.0f5a9be5.svg": "/turbina/static/media/audioplayer-close-options-image.0f5a9be5.svg",
@@ -22,12 +22,13 @@
     "static/media/header-close-streamings.b7e08e83.svg": "/turbina/static/media/header-close-streamings.b7e08e83.svg",
     "static/media/logo-marshak.859a2dac.svg": "/turbina/static/media/logo-marshak.859a2dac.svg",
     "static/media/logo-turbina.1147fd75.svg": "/turbina/static/media/logo-turbina.1147fd75.svg",
+    "static/media/offer.f6f474e1.pdf": "/turbina/static/media/offer.f6f474e1.pdf",
     "static/media/the-police_-_every-breath-you-take.e4011ee5.mp3": "/turbina/static/media/the-police_-_every-breath-you-take.e4011ee5.mp3"
   },
   "entrypoints": [
-    "static/js/runtime-main.aced9d19.js",
-    "static/js/2.db1fd4f7.chunk.js",
+    "static/js/runtime-main.ea916f42.js",
+    "static/js/2.15528f73.chunk.js",
     "static/css/main.1a359dd7.chunk.css",
-    "static/js/main.0a17f0da.chunk.js"
+    "static/js/main.db70ba4b.chunk.js"
   ]
 }
