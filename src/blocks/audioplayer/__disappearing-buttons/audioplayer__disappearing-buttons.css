@@ -1,13 +1,5 @@
 .audioplayer__disappearing-buttons {
     display: flex;
     flex-direction: row;
-    margin-right: 10px;
-}
-
-@media screen and (max-width: 767px) {
-    .audioplayer__disappearing-buttons {
-        margin-top: 20px;
-        grid-column: 2/3;
-        margin-right: 0;
-    }
+    grid-area: disappearing-buttons;
 }

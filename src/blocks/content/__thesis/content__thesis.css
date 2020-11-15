@@ -1,0 +1,13 @@
+.content__thesis {
+    margin-bottom: 10px;
+}
+
+.content__thesis:last-of-type {
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 425px) {
+    .content__thesis {
+        margin-bottom: 7px;
+    }
+}

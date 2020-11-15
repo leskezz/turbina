@@ -1,0 +1,22 @@
+.content__text {
+    margin: 0 0 90px;
+}
+
+.content__text:first-of-type {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .content__text {
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .content__text {
+        margin-bottom: 60px;
+    }
+    .content__text:first-of-type {
+        margin-bottom: 10px;
+    }
+}

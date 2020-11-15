@@ -1,0 +1,29 @@
+.audioplayer__cover {
+    max-width: 176px;
+    max-height: 176px;
+    object-fit: cover;
+    grid-area: cover;
+}
+
+@media screen and (max-width: 1100px) {
+    .audioplayer__cover {
+        max-width: 164px;
+        max-height: 164px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .audioplayer__cover {
+        max-width: 112px;
+        max-height: 112px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .audioplayer__cover {
+        justify-self: center;
+        width: 100%;
+        max-width: 240px;
+        max-height: 240px;
+    }
+}
