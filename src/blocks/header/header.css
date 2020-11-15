@@ -7,7 +7,6 @@
 @import url(./__streaming/header__streaming.css);
 @import url(./__streaming-button/header__streaming-button.css);
 @import url(./__streaming-button/_clicked/header__streaming-button_clicked.css);
-
 .header {
     position: relative;
     background: url(../../images/header-background.jpg) no-repeat;
