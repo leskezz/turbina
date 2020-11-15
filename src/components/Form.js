@@ -108,7 +108,7 @@ const Form = () => {
                     <label className="form__radio-label hover-opacity" htmlFor="checkbox"></label>
                     <p className="text">
                     Согласен с{" "}
-                    <a href={offerDocument} className="form__link-offer hover-opacity" target="_blank">офертой</a>
+                    <a href={offerDocument} className="form__link-offer hover-opacity" target="_blank" rel="noreferrer">офертой</a>
                     </p>
                 </div>
                 { !isAgreeOfferValid && <span className="form__input_type_error" id="checkbox-error">Необходимо согласие с офертой</span> }
