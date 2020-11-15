@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/turbina/static/css/main.1a359dd7.chunk.css",
-    "main.js": "/turbina/static/js/main.db70ba4b.chunk.js",
-    "main.js.map": "/turbina/static/js/main.db70ba4b.chunk.js.map",
+    "main.css": "/turbina/static/css/main.ee80cdfd.chunk.css",
+    "main.js": "/turbina/static/js/main.b41af6d4.chunk.js",
+    "main.js.map": "/turbina/static/js/main.b41af6d4.chunk.js.map",
     "runtime-main.js": "/turbina/static/js/runtime-main.ea916f42.js",
     "runtime-main.js.map": "/turbina/static/js/runtime-main.ea916f42.js.map",
     "static/js/2.15528f73.chunk.js": "/turbina/static/js/2.15528f73.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.dd31a97b.chunk.js": "/turbina/static/js/3.dd31a97b.chunk.js",
     "static/js/3.dd31a97b.chunk.js.map": "/turbina/static/js/3.dd31a97b.chunk.js.map",
     "index.html": "/turbina/index.html",
-    "static/css/main.1a359dd7.chunk.css.map": "/turbina/static/css/main.1a359dd7.chunk.css.map",
+    "static/css/main.ee80cdfd.chunk.css.map": "/turbina/static/css/main.ee80cdfd.chunk.css.map",
     "static/js/2.15528f73.chunk.js.LICENSE.txt": "/turbina/static/js/2.15528f73.chunk.js.LICENSE.txt",
     "static/media/index.css": "/turbina/static/media/header-background.8c6e38ef.jpg",
     "static/media/Queen_-_Bohemian_Rhapsody.f7b2cf94.mp3": "/turbina/static/media/Queen_-_Bohemian_Rhapsody.f7b2cf94.mp3",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.ea916f42.js",
     "static/js/2.15528f73.chunk.js",
-    "static/css/main.1a359dd7.chunk.css",
-    "static/js/main.db70ba4b.chunk.js"
+    "static/css/main.ee80cdfd.chunk.css",
+    "static/js/main.b41af6d4.chunk.js"
   ]
 }
