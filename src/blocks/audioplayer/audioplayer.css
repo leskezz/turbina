@@ -3,13 +3,16 @@
 .audioplayer {
     position: relative;
     color: #FFFFFF;
-    font-family: 'Inter', Arial, sans-serif;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "play track  display-options";
     gap: 20px;
+    width: 100%;
     padding: 0 25px 20px;
     filter: blur(0);
+    max-width: 1230px;
+    box-sizing: border-box;
 }
 
 @media screen and (max-width: 1024px) {

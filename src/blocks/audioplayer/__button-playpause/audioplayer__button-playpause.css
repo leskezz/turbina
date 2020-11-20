@@ -9,5 +9,6 @@
     background: none;
     cursor: pointer;
     padding: 0;
+    outline: none;
     grid-area: play;
 }
