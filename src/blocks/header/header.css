@@ -9,12 +9,13 @@
 @import url(./__streaming-button/_clicked/header__streaming-button_clicked.css);
 .header {
     position: relative;
-    background: url(../../images/header-background.jpg) no-repeat;
+    /* background: url(../../images/header-background.jpg) no-repeat; */
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding-bottom: 10px;
 }

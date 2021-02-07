@@ -5,18 +5,19 @@
     border-radius: 0;
     background: none;
     cursor: pointer;
-    border: 2px solid white;
+    border: 2px solid #FFFFFF;
     border-radius: 30px;
     width: 66%;
     height: 35px;
     align-items: center;
     box-sizing: border-box;
-    font-family: 'Inter', Arial, sans-serif;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
     min-width: 135px;
+    outline: none;
 }
 
 @media screen and (max-width: 1024px) {
