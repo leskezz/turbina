@@ -1,0 +1,42 @@
+.audioplayer__clip {
+    color: #000000;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    border: 2px solid FFFFFF;
+    border-radius: 30px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+    padding: 0 20px;
+    margin-right: 10px;
+    width: 33%;
+}
+
+@media screen and (max-width: 1024px) {
+    .audioplayer__clip {
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .audioplayer__clip {}
+}
+
+@media screen and (max-width: 425px) {
+    .audioplayer__clip {
+        font-size: 12px;
+        line-height: 15px;
+        margin-right: 5px;
+        gap: 5px;
+        height: 30px;
+    }
+}

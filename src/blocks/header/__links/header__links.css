@@ -1,0 +1,8 @@
+@import url(./_disable/header__links_disable.css);
+
+.header__links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}

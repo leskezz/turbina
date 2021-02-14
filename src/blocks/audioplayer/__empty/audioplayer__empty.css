@@ -1,0 +1,22 @@
+.audioplayer__empty {
+    margin: 0;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+    .audioplayer__empty {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .audioplayer__empty {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}

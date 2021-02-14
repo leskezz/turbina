@@ -1,0 +1,25 @@
+.audioplayer__track-length {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    justify-self: end;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+    .audioplayer__track-length {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .audioplayer__track-length {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}

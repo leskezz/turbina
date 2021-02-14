@@ -1,0 +1,23 @@
+.form {}
+
+.form__input_type_error {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: red;
+    padding-top: 10px;
+}
+
+.form__input_type_error:last-of-type {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 425px) {
+    .form__input_type_error {
+        font-size: 14px;
+    }
+}
+
+.form__input-error_active {
+    padding-top: 0;
+}

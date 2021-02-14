@@ -1,0 +1,21 @@
+@import url(./__topbar/header__topbar.css);
+@import url(./__logo/header__logo.css);
+@import url(./__links/header__links.css);
+@import url(./__link/header__link.css);
+@import url(./__title/header__title.css);
+@import url(./__title-img/header__title-img.css);
+@import url(./__streaming/header__streaming.css);
+@import url(./__streaming-button/header__streaming-button.css);
+@import url(./__streaming-button/_clicked/header__streaming-button_clicked.css);
+.header {
+    position: relative;
+    /* background: url(../../images/header-background.jpg) no-repeat; */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}

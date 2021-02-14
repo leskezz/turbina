@@ -1,0 +1,15 @@
+.page {
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    position: relative;
+}
+
+.page::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: '';
+    background: linear-gradient(217deg, rgba(206, 167, 176, 0.842), rgba(255, 0, 0, 0) 70%), linear-gradient(127deg, rgba(206, 167, 176, 0.842), rgba(0, 255, 0, 0) 70%), radial-gradient(ellipse at bottom, rgba(0, 0, 255), transparent 300%);
+}

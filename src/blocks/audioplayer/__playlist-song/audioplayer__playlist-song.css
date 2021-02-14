@@ -1,0 +1,36 @@
+.audioplayer__playlist-song {
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.audioplayer__playlist-song:last-of-type {
+    margin-bottom: 0;
+}
+
+.audioplayer__playlist-song:hover {
+    font-style: italic;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .audioplayer__playlist-song {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .audioplayer__playlist-song {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}

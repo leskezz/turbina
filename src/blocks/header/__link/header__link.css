@@ -1,0 +1,38 @@
+.header__link {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 20px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    border: 2px solid white;
+    border-radius: 30px;
+    height: 31px;
+    margin-bottom: 9px;
+    float: right;
+    clear: right;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    transition: .2s;
+}
+
+.header__link:hover {
+    border: 2px solid black;
+    background-color: black;
+    transition: .3s;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__link {
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header__link {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}

@@ -1,0 +1,5 @@
+.audioplayer__disappearing-buttons {
+    display: flex;
+    flex-direction: row;
+    grid-area: disappearing-buttons;
+}

@@ -1,0 +1,11 @@
+.audioplayer__clip-image {
+    width: 11px;
+    height: 13px;
+}
+
+@media screen and (max-width: 425px) {
+    .audioplayer__clip-image {
+        width: 9px;
+        height: 11px;
+    }
+}

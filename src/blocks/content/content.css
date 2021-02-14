@@ -1,0 +1,18 @@
+.content {
+    background-color: #FFFFFF;
+    padding: 64px 58px 86px;
+    border-radius: 8px;
+    position: relative;
+    top: -10px;
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 425px) {
+    .content {
+        margin: 0 5px;
+        padding: 36px 16px 41px;
+    }
+}

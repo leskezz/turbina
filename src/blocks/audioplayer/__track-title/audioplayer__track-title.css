@@ -1,0 +1,26 @@
+.audioplayer__track-title {
+    margin: 0;
+    padding-right: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+    .audioplayer__track-title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .audioplayer__track-title {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}

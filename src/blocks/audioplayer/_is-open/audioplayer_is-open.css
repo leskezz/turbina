@@ -1,0 +1,24 @@
+.audioplayer_is-open {
+    padding: 0 25px 30px;
+    gap: 30px 20px;
+    grid-template-areas: "cover play track disappearing-buttons display-options" "cover . text-container text-container .";
+    grid-template-columns: auto auto 1fr auto auto;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+    .audioplayer_is-open {
+        grid-template-areas: "play track track disappearing-buttons display-options" ". cover  text-container text-container .";
+        gap: 20px 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .audioplayer_is-open {
+        padding: 0 15px 30px;
+        max-height: 480px;
+        grid-template-areas: "play track  display-options" ". cover ." ". disappearing-buttons ." ". text-container .";
+        grid-template-columns: auto 1fr auto;
+        gap: 20px 9px;
+    }
+}
